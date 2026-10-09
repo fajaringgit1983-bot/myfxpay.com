@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFxPay - Official Broker Rebates & Cashback System</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F17',
+                            card: '#111827',
+                            accent: '#2563EB',
+                            green: '#10B981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-text {
+            text-shadow: 0 0 20px rgba(37, 99, 235, 0.6), 0 0 40px rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-[#0B0F17] text-slate-100 font-sans antialiased scroll-smooth selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800/80 bg-[#0B0F17]/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-xl flex items-center justify-center font-black text-2xl text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                    M
+                </div>
+                <span class="font-extrabold text-xl tracking-tight text-white">MyFx<span class="text-blue-500">Pay</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition">Tentang Kami</a>
+                <a href="#how-it-works" class="hover:text-white transition">Cara Kerja</a>
+                <a href="#claim-rebate" class="hover:text-white transition">Kalkulator & Claim</a>
+                <a href="#market-watch" class="hover:text-white transition">Live Market</a>
+                <a href="#partner" class="hover:text-white transition">Sub-IB Partner</a>
+                <a href="whatsapp.html" class="text-emerald-400 hover:text-emerald-300 transition flex items-center space-x-1 font-semibold">
+                    <span>Saluran WhatsApp</span>
+                    <span class="text-xs">↗</span>
+                </a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="https://id.puprime.partners/forex-trading-account/?affid=MjkwNzI5MDE=" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-blue-600/25">
+                    Buka Akun PU Prime
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700/80 text-blue-400 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-8 shadow-inner">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Official IB Partner PU Prime</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-tight mb-6">
+            Dapatkan Cashback Rebate <br class="hidden sm:inline"/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-emerald-400">Setiap Transaksi Trading Anda</span>
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+            Profit maupun loss, dapatkan pengembalian komisi hingga 90% secara otomatis tanpa merubah spread dan kondisi trading Anda di PU Prime.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+            <a href="#claim-rebate" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-blue-600/30 text-base flex items-center justify-center space-x-2">
+                <span>⚡ Cek & Claim Rebate Akun</span>
+            </a>
+            <a href="whatsapp.html" class="bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 border border-slate-700/80 font-bold px-8 py-4 rounded-xl transition text-base flex items-center justify-center space-x-2">
+                <span>💬 Gabung Saluran WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 1: CARA KERJA (HOW IT WORKS) -->
+    <section id="how-it-works" class="py-20 bg-slate-900/60 border-t border-slate-800/80 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-xs uppercase tracking-widest text-blue-400 font-bold bg-blue-500/10 border border-blue-500/20 px-3.5 py-1 rounded-full">Langkah Mudah</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Cara Kerja Cashback MyFxPay</h2>
+                <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">Hanya butuh 3 langkah sederhana untuk mulai menikmati cashback rebate harian Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 relative hover:border-blue-500/50 transition group">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 border border-blue-500/30 rounded-xl flex items-center justify-center font-black text-xl mb-6 group-hover:scale-110 transition-transform">
+                        1
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Buka / Pindahkan Akun</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Daftar akun trading PU Prime melalui tautan referral MyFxPay atau pindahkan IB akun Anda yang sudah ada ke jaringan kami.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 relative hover:border-blue-500/50 transition group">
+                    <div class="w-12 h-12 bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 rounded-xl flex items-center justify-center font-black text-xl mb-6 group-hover:scale-110 transition-transform">
+                        2
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Trading Seperti Biasa</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Lakukan transaksi trading forex, emas (XAUUSD), atau aset pilihan Anda seperti biasa tanpa perubahan spread atau komisi tambahan.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 relative hover:border-blue-500/50 transition group">
+                    <div class="w-12 h-12 bg-indigo-600/20 text-indigo-400 border border-indigo-500/30 rounded-xl flex items-center justify-center font-black text-xl mb-6 group-hover:scale-110 transition-transform">
+                        3
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Terima Rebate Otomatis</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Setiap lot transaksi dikalkulasi dan diakumulasi menjadi cashback tunai yang dapat dicairkan langsung ke Bank Lokal atau USDT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: KALKULATOR & VALIDASI AKUN -->
+    <section id="claim-rebate" class="py-20 bg-[#0B0F17] border-t border-slate-800/80 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            
+            <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+                <span>💰 KALKULATOR & VALIDASI</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl font-black text-white mb-3">Cek & Claim Rebate Akun</h2>
+            <p class="text-slate-400 text-sm sm:text-base mb-10">Hitung estimasi rebate Anda atau masukkan nomor akun MT4/MT5 PU Prime untuk memeriksa total lot resmi.</p>
+
+            <!-- Bagian 1: Kalkulator Fleksibel Estimasi Rebate -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur relative overflow-hidden text-left mb-8">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-blue-400 mb-6 flex items-center space-x-2">
+                    <span>📊 Kalkulator Estimasi Rebate</span>
+                </h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">TOTAL LOT</label>
+                        <input type="number" id="totalLotInput" value="1" min="0" step="0.01" oninput="calculateRebate()" class="w-full bg-[#0B0F17] border border-slate-700/80 rounded-xl px-4 py-3 text-base font-bold text-white focus:outline-none focus:border-blue-500 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">REBATE / LOT (USD)</label>
+                        <input type="number" id="rebatePerLotInput" value="4" min="0" step="0.01" oninput="calculateRebate()" class="w-full bg-[#0B0F17] border border-slate-700/80 rounded-xl px-4 py-3 text-base font-bold text-white focus:outline-none focus:border-blue-500 transition">
+                    </div>
+                </div>
+
+                <div class="bg-[#0B0F17] border border-slate-800 rounded-2xl p-6 text-center space-y-1">
+                    <span class="text-[11px] uppercase tracking-widest text-slate-400 font-extrabold block">ESTIMASI REBATE SIMULASI</span>
+                    <div id="totalRebateDisplay" class="text-3xl sm:text-5xl font-black text-blue-400 glow-text my-1">$4.00</div>
+                    <span class="text-xs text-slate-400">Total lot: <strong id="summaryLot" class="text-slate-200">1.00</strong> | Rate: <strong id="summaryRate" class="text-slate-200">$4.00/lot</strong></span>
+                </div>
+            </div>
+
+            <!-- Bagian 2: Validasi Akun Berdasarkan Database Rekap Resmi -->
+            <div class="bg-slate-900/90 border border-blue-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur relative overflow-hidden text-left">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-emerald-400 mb-6 flex items-center space-x-2">
+                    <span>🔍 Cek Akun & Perolehan Lot Resmi</span>
+                </h3>
+
+                <div class="mb-6">
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">NOMOR AKUN MT4 / MT5 PU PRIME</label>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <input type="text" id="accountSearchInput" placeholder="Contoh: 36025347" class="w-full bg-[#0B0F17] border border-slate-700/80 rounded-xl px-4 py-3.5 text-lg font-bold text-white focus:outline-none focus:border-blue-500 transition">
+                        <button type="button" onclick="searchAccountLot()" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-3.5 rounded-xl transition shadow-lg shadow-blue-600/25 text-sm sm:whitespace-nowrap">
+                            🔎 Cek Perolehan Lot
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hasil Pencarian Akun -->
+                <div id="searchResultBox" class="hidden bg-[#0B0F17]/90 border border-slate-800 rounded-2xl p-6 sm:p-8 text-center space-y-3 mt-6">
+                    <div class="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-extrabold px-3 py-1 rounded-full border border-emerald-500/20 mb-1">
+                        ✓ Akun Terverifikasi
+                    </div>
+                    
+                    <span class="text-xs uppercase tracking-widest text-slate-400 font-extrabold block">ESTIMASI TOTAL REBATE RESMI</span>
+                    
+                    <div id="resTotalRebate" class="text-4xl sm:text-6xl font-black text-blue-400 glow-text my-2">
+                        $0.00
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400 font-semibold pt-2 border-t border-slate-800/80">
+                        <span>No. Akun: <strong id="resAccNum" class="text-white">-</strong></span>
+                        <span>•</span>
+                        <span>Total Lot Resmi: <strong id="resTotalLot" class="text-slate-200">0.00 Lot</strong></span>
+                        <span>•</span>
+                        <span>Rate: <strong id="resRate" class="text-slate-200">$4.00/lot</strong></span>
+                    </div>
+
+                    <div class="mt-8 pt-4">
+                        <button type="button" id="btnClaimWA" onclick="sendVerifiedClaimWA()" class="w-full sm:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold px-10 py-4 rounded-xl transition shadow-lg shadow-emerald-600/25 text-base inline-flex items-center justify-center space-x-2">
+                            <span>💬 Klaim Saldo Rebate via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Error Message (Jika Nomor Akun Tidak Ditemukan) -->
+                <div id="searchErrorBox" class="hidden bg-red-500/10 border border-red-500/30 rounded-2xl p-6 text-center space-y-3 mt-6">
+                    <p class="text-red-400 font-bold text-sm">Nomor Akun Tidak Ditemukan dalam Database Laporan IB Resmi</p>
+                    <p class="text-slate-400 text-xs max-w-lg mx-auto">Pastikan Anda mendaftar PU Prime menggunakan link IB MyFxPay, atau hubungi admin via WhatsApp untuk pendaftaran/pemindahan akun IB.</p>
+                    <a href="https://id.puprime.partners/forex-trading-account/?affid=MjkwNzI5MDE=" target="_blank" class="inline-block text-xs font-bold text-blue-400 hover:underline pt-2">
+                        Daftar Akun PU Prime under MyFxPay di Sini →
+                    </a>
+                </div>
+
+                <p id="dataLastUpdated" class="text-[11px] text-slate-500 mt-6 text-center">
+                    Data rekap diperbarui secara berkala dari Laporan Resmi PU Prime.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: LIVE MARKET WATCH (KHUSUS XAUUSD / GOLD) -->
+    <section id="market-watch" class="py-20 bg-slate-900/60 border-t border-slate-800/80 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold bg-emerald-500/10 border border-emerald-500/20 px-3.5 py-1 rounded-full">◈ LIVE MARKET</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3 uppercase tracking-tight">MARKET WATCH</h2>
+                <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">Pantau pergerakan harga Emas (XAUUSD) secara live dalam satu halaman.</p>
+            </div>
+
+            <div class="flex justify-center mb-6">
+                <div class="bg-blue-600 border border-blue-500 text-white px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold flex items-center space-x-2.5 shadow-lg">
+                    <span>XAUUSD</span> 
+                    <span class="text-[10px] bg-amber-400 text-slate-900 font-black px-2 py-0.5 rounded">GOLD</span> 
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs text-emerald-300">LIVE</span>
+                </div>
+            </div>
+
+            <div class="bg-[#0B0F17] border border-slate-800 rounded-3xl p-4 sm:p-6 shadow-2xl relative">
+                <div class="flex justify-between items-center mb-4 px-2">
+                    <span class="text-sm font-extrabold text-white tracking-wider flex items-center space-x-2">
+                        <span>Gold Spot / U.S. Dollar</span>
+                        <span class="text-amber-400 text-xs">(XAUUSD)</span>
+                    </span>
+                    <span class="text-[11px] font-bold text-emerald-400 flex items-center space-x-1">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>LIVE MARKET</span>
+                    </span>
+                </div>
+
+                <div class="w-full h-[500px] sm:h-[550px] rounded-2xl overflow-hidden border border-slate-800">
+                    <iframe id="tradingview-chart" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_chart&symbol=OANDA%3AXAUUSD&interval=5&hidesidetoolbar=0&symboledit=1&saveimage=1&toolbarbg=0B0F17&studies=%5B%5D&theme=dark&style=1&timezone=Asia%2FJakarta&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=id&utm_source=myfxpay.com&utm_medium=widget&utm_campaign=chart" class="w-full h-full border-0"></iframe>
+                </div>
+
+                <p class="text-[10px] text-slate-500 mt-4 text-center">
+                    Harga dan chart berasal dari feed pasar pihak ketiga dan dapat mengalami keterlambatan. Gunakan sebagai informasi, bukan jaminan hasil trading.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: SUB-IB PARTNER -->
+    <section id="partner" class="py-16 bg-[#0B0F17] border-t border-slate-800/80 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto bg-gradient-to-r from-blue-950/80 via-slate-900 to-indigo-950/80 border border-blue-500/30 rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="space-y-3 text-center md:text-left">
+                <span class="bg-blue-500/20 text-blue-400 text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider">Program Kemitraan & Komunitas</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Ingin Menjadi Sub-IB Partner?</h3>
+                <p class="text-slate-300 text-sm max-w-xl leading-relaxed">
+                    Khusus untuk **Leader Komunitas, Signal Provider, atau Edukator** yang memiliki minimal 5–10 anggota aktif. Dapatkan bagi hasil komisi jaringan dan dukung komunitas Anda tumbuh bersama MyFxPay.
+                </p>
+                <p class="text-xs text-amber-400/90 italic pt-1">
+                    *Trader dengan akun personal cukup mendaftar via tombol "Buka Akun PU Prime" di atas untuk menikmati cashback rebate langsung.
+                </p>
+            </div>
+            <div class="flex-shrink-0 w-full md:w-auto text-center">
+                <a href="https://www.puprimepartners.com/ib-registration/?affid=MjkwNzI5MDE=" target="_blank" rel="noopener noreferrer" class="block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-blue-500/25 text-sm mb-2">
+                    Daftar Sub-IB Partner →
+                </a>
+                <span class="text-[11px] text-slate-400">Verifikasi resmi oleh PU Prime Partnership</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-slate-900 py-14 px-4 sm:px-6 lg:px-8 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center font-black text-white text-lg">M</div>
+                    <span class="font-extrabold text-lg text-white tracking-tight">MyFx<span class="text-blue-500">Pay</span></span>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+                    Platform pengembalian komisi & rebate terpercaya untuk trader forex.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white text-sm mb-4 uppercase tracking-wider">Tautan Cepat</h4>
+                <ul class="space-y-2.5">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#how-it-works" class="hover:text-white transition">Cara Kerja</a></li>
+                    <li><a href="#claim-rebate" class="hover:text-white transition">Kalkulator & Claim</a></li>
+                    <li><a href="#market-watch" class="hover:text-white transition">Live Market</a></li>
+                    <li><a href="#partner" class="hover:text-white transition">Program Sub-IB</a></li>
+                    <li><a href="whatsapp.html" class="hover:text-white transition text-emerald-400">Saluran WhatsApp</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="font-bold text-white text-sm mb-4 uppercase tracking-wider">Kontak Resmi</h4>
+                <p class="flex items-center space-x-2">
+                    <span>💬</span>
+                    <a href="whatsapp.html" class="text-emerald-400 hover:underline transition font-semibold">+62 813-3492-8686 (WhatsApp)</a>
+                </p>
+                <p class="flex items-center space-x-2">
+                    <span>✉️</span>
+                    <a href="mailto:support@myfxpay.com" class="hover:text-white transition font-medium">support@myfxpay.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-slate-900 pt-8 text-center text-slate-500 text-xs space-y-2">
+            <p>&copy; 2026 MyFxPay. All rights reserved. Official Partner of PU Prime.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logika Kalkulator & Validasi -->
+    <script>
+        // Logika Kalkulator Fleksibel
+        function calculateRebate() {
+            const lotInput = parseFloat(document.getElementById('totalLotInput').value) || 0;
+            const rateInput = parseFloat(document.getElementById('rebatePerLotInput').value) || 0;
+            const total = lotInput * rateInput;
+
+            document.getElementById('totalRebateDisplay').innerText = '$' + total.toFixed(2);
+            document.getElementById('summaryLot').innerText = lotInput.toFixed(2);
+            document.getElementById('summaryRate').innerText = '$' + rateInput.toFixed(2) + '/lot';
+        }
+
+        let lotDataStore = {};
+        let currentSearchedAccount = null;
+
+        // Ambil data-lot.json secara otomatis saat halaman dibuka
+        async function loadLotDatabase() {
+            try {
+                const response = await fetch('data-lot.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    lotDataStore = data.accounts || {};
+                    if(data.last_updated) {
+                        document.getElementById('dataLastUpdated').innerText = 'Data rekap diperbarui pada: ' + data.last_updated + ' (Laporan Resmi PU Prime)';
+                    }
+                }
+            } catch (e) {
+                console.log('Database lot belum tersedia atau terjadi kesalahan muat data.');
+            }
+        }
+
+        function searchAccountLot() {
+            const accInput = document.getElementById('accountSearchInput').value.trim();
+            const resultBox = document.getElementById('searchResultBox');
+            const errorBox = document.getElementById('searchErrorBox');
+
+            if (!accInput) {
+                alert('Silakan masukkan nomor akun MT4/MT5 PU Prime Anda.');
+                return;
+            }
+
+            if (lotDataStore[accInput]) {
+                const item = lotDataStore[accInput];
+                const totalLot = parseFloat(item.lot) || 0;
+                const rate = parseFloat(item.rate) || 4.00;
+                const totalUSD = totalLot * rate;
+
+                currentSearchedAccount = {
+                    accNum: accInput,
+                    lot: totalLot,
+                    rate: rate,
+                    totalUSD: totalUSD
+                };
+
+                document.getElementById('resAccNum').innerText = accInput;
+                document.getElementById('resTotalLot').innerText = totalLot.toFixed(2) + ' Lot';
+                document.getElementById('resRate').innerText = '$' + rate.toFixed(2) + '/lot';
+                document.getElementById('resTotalRebate').innerText = '$' + totalUSD.toFixed(2);
+
+                resultBox.classList.remove('hidden');
+                errorBox.classList.add('hidden');
+            } else {
+                resultBox.classList.add('hidden');
+                errorBox.classList.remove('hidden');
+            }
+        }
+
+        function sendVerifiedClaimWA() {
+            if (!currentSearchedAccount) return;
+
+            const text = `Halo Admin MyFxPay,%0A%0ASaya ingin klaim pencairan rebate akun terverifikasi saya:%0A- No. Akun: ${currentSearchedAccount.accNum}%0A- Total Lot Resmi: ${currentSearchedAccount.lot.toFixed(2)} Lot%0A- Rate Rebate: $${currentSearchedAccount.rate.toFixed(2)}/lot%0A- Total Estimasi Rebate: $${currentSearchedAccount.totalUSD.toFixed(2)}%0A%0AMohon bantuan proses pencairannya. Terima kasih!`;
+            window.open(`https://wa.me/6281334928686?text=${text}`, '_blank');
+        }
+
+        // Skrip Pengaman
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.addEventListener('keydown', function(e) {
+            if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && e.keyCode === 85)) {
+                e.preventDefault();
+            }
+        });
+
+        // Jalankan kalkulator awal dan muat database
+        calculateRebate();
+        loadLotDatabase();
+    </script>
+</body>
+</html>
